@@ -9,6 +9,8 @@ import io.grpc.ManagedChannelBuilder;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -64,6 +66,9 @@ public class CorfuKVClient {
 
 
     public static void main(String[] args) throws InterruptedException {
+
+        Logger log = Logger.getLogger("io.grpc");
+        log.setLevel(Level.WARNING);
 
         CommandGet get = new CommandGet();
         CommandSet set = new CommandSet();
