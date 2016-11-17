@@ -1,0 +1,2 @@
+#!/bin/sh
+java -cp ./target/corfukv-1.0-SNAPSHOT-jackofall.jar com.vmware.corfukv.CorfuKVServer
